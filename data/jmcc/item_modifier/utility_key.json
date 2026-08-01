@@ -1,0 +1,78 @@
+{
+    "type": "minecraft:set_components",
+    "components": {
+        "minecraft:block_transformer": [
+            {
+                "block_state_provider": {
+                    "type": "minecraft:rule_based_state_provider",
+                    "rules": [
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:redstone_block"
+                            },
+                            "then": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:lapis_block"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "item_damage_per_use": 1,
+                "sound": "minecraft:block.lever.click"
+            },
+            {
+                "block_state_provider": {
+                    "type": "minecraft:rule_based_state_provider",
+                    "rules": [
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:lapis_block"
+                            },
+                            "then": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:coal_block"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "item_damage_per_use": 1,
+                "sound": "minecraft:block.stone_button.click_on"
+            },
+            {
+                "block_state_provider": {
+                    "type": "minecraft:rule_based_state_provider",
+                    "rules": [
+                        {
+                            "if_true": {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": "minecraft:coal_block"
+                            },
+                            "then": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                    "Name": "minecraft:lapis_block"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "item_damage_per_use": 1,
+                "sound": "minecraft:block.stone_button.click_on"
+            }
+        ],
+        "minecraft:damage": 0,
+        "minecraft:item_model": "jmcc:utility_key",
+        "minecraft:item_name": {
+            "type": "translatable",
+            "translate": "item.jmcc.utility_key"
+        },
+        "minecraft:max_damage": 256,
+        "minecraft:max_stack_size": 1
+    }
+}
