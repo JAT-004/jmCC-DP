@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:set_components",
+    "components": {
+        "minecraft:entity_data": {
+            "id": "minecraft:glow_item_frame",
+            "data": {
+                "jmcc": {
+                    "function": "jmcc:marker/setup"
+                }
+            },
+            "Tags": [
+                "jmcc.setup"
+            ]
+        },
+        "minecraft:item_model": "jmcc:marker",
+        "minecraft:item_name": {
+            "type": "translatable",
+            "translate": "item.jmcc.marker"
+        },
+        "minecraft:max_stack_size": 16
+    }
+}

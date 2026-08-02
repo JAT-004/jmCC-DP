@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:set_count",
+    "count": {
+        "type": "minecraft:score",
+        "target": {
+            "type": "minecraft:fixed",
+            "name": "input.count"
+        },
+        "score": "jmcc.number"
+    }
+}
