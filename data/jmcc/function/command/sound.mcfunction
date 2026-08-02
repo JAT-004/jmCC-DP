@@ -1,0 +1,2 @@
+
+$playsound $(sound) player @a ~ ~ ~

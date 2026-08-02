@@ -3,11 +3,6 @@
     "components": {
         "minecraft:entity_data": {
             "id": "minecraft:marker",
-            "data": {
-                "jmcc": {
-                    "function": "jmcc:marker/setup"
-                }
-            },
             "Tags": [
                 "jmcc.setup"
             ]
