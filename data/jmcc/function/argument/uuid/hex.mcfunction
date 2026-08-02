@@ -1,0 +1,18 @@
+
+# transform decimal to hex number
+$data modify storage jmcc:data argument.uuid.0 set from storage jmcc:data static.hex[$(0)]
+$data modify storage jmcc:data argument.uuid.1 set from storage jmcc:data static.hex[$(1)]
+$data modify storage jmcc:data argument.uuid.2 set from storage jmcc:data static.hex[$(2)]
+$data modify storage jmcc:data argument.uuid.3 set from storage jmcc:data static.hex[$(3)]
+$data modify storage jmcc:data argument.uuid.4 set from storage jmcc:data static.hex[$(4)]
+$data modify storage jmcc:data argument.uuid.5 set from storage jmcc:data static.hex[$(5)]
+$data modify storage jmcc:data argument.uuid.6 set from storage jmcc:data static.hex[$(6)]
+$data modify storage jmcc:data argument.uuid.7 set from storage jmcc:data static.hex[$(7)]
+$data modify storage jmcc:data argument.uuid.8 set from storage jmcc:data static.hex[$(8)]
+$data modify storage jmcc:data argument.uuid.9 set from storage jmcc:data static.hex[$(9)]
+$data modify storage jmcc:data argument.uuid.a set from storage jmcc:data static.hex[$(a)]
+$data modify storage jmcc:data argument.uuid.b set from storage jmcc:data static.hex[$(b)]
+$data modify storage jmcc:data argument.uuid.c set from storage jmcc:data static.hex[$(c)]
+$data modify storage jmcc:data argument.uuid.d set from storage jmcc:data static.hex[$(d)]
+$data modify storage jmcc:data argument.uuid.e set from storage jmcc:data static.hex[$(e)]
+$data modify storage jmcc:data argument.uuid.f set from storage jmcc:data static.hex[$(f)]

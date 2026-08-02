@@ -2,7 +2,7 @@
     "type": "minecraft:set_components",
     "components": {
         "minecraft:entity_data": {
-            "id": "minecraft:glow_item_frame",
+            "id": "minecraft:marker",
             "data": {
                 "jmcc": {
                     "function": "jmcc:marker/setup"
