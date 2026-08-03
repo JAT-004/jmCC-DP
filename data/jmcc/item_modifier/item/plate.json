@@ -21,10 +21,7 @@
         "type": "minecraft:set_custom_data",
         "tag": {
             "jmcc": {
-                "on_throw": {
-                    "sound": "minecraft:item.shield.break",
-                    "replace": "jmcc:item/broken_plate"
-                }
+                "item": "plate"
             }
         }
     }
