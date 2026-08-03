@@ -10,5 +10,7 @@ data modify storage jmcc:data static.hex set value ["00","01","02","03","04","05
 # set items that do not use the default item id
 data modify storage jmcc:data static.item set value {marker: {name: "marker", id: "minecraft:bat_spawn_egg"}}
 
-data modify storage jmcc:data item.broken_plate set value {"item": "broken_plate", "on_throw": {"on_ground": true, "explosion": {"power": 4.05}, "delete": true}}
+data modify storage jmcc:data item.broken_plate set value {"item": "broken_plate", "on_throw": {"on_ground": true, "explosion": {"power": 1.0}, "delete": true}}
+data modify storage jmcc:data item.old_key set value {"item": "old_key", "group": "key"}
 data modify storage jmcc:data item.plate set value {"item": "plate", "on_throw": {"on_ground": true, "sound": {"id": "minecraft:item.shield.break", "source": "ambient", "target": "@a", "volume": 1.0, "pitch": 1.0}, "delete": true, "loot": "jmcc:item/broken_plate"}}
+data modify storage jmcc:data item.rusty_key set value {"item": "rusty_key", "group": "key"}

@@ -1,0 +1,23 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "modifier": [
+                        "jmcc:item/old_key"
+                    ]
+                }
+            ],
+            "rolls": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "input.count"
+                },
+                "score": "jmcc.number"
+            }
+        }
+    ]
+}
