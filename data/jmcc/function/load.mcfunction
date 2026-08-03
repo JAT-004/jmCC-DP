@@ -11,4 +11,4 @@ data modify storage jmcc:data static.hex set value ["00","01","02","03","04","05
 data modify storage jmcc:data static.item set value {marker: {name: "marker", id: "minecraft:bat_spawn_egg"}}
 
 data modify storage jmcc:data item.broken_plate set value {"item": "broken_plate"}
-data modify storage jmcc:data item.plate set value {"item": "plate", "on_throw": {"sound": "minecraft:item.shield.break", "replace": "jmcc:item/broken_plate"}}
+data modify storage jmcc:data item.plate set value {"item": "plate", "on_throw": {"sound": {"id": "minecraft:item.shield.break", "source": "ambient", "target": "@a", "volume": 1.0, "pitch": 1.0}, "replace": "jmcc:item/broken_plate"}}
