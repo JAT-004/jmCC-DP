@@ -1,6 +1,8 @@
 
 # default number scoreboard
 scoreboard objectives add jmcc.number dummy
+scoreboard objectives add jmcc.limit dummy
+scoreboard objectives add jmcc.count dummy
 
 # set static numbers
 scoreboard players set static.256 jmcc.number 256
