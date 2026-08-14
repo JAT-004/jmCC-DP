@@ -34,6 +34,28 @@ Queue the command `/say Hello` for 200 ticks (10 seconds).
 
 `/function jmcc:command/queue {tick:100,command:"function jmcc:command/queue {tick:100,command:'say Hi'}"}`\
 Add another queue command to the queue. The command `/say Hi` will run in 100 + 100 = 200 ticks (10 seconds).
+## Command setblock/door
+Places a door.
+## Arguments
+argument `block`\
+argument `facing`\
+argument `hinge`\
+argument `open`\
+Specifies the door type and blockstate.
+## Examples
+`/function jmcc:command/setblock/door {block:"minecraft:poplar_door",facing:"north",hinge:"left",open:"true"}`\
+Places a `minecraft:poplar_door` with the specified blockstate.
+## Command setblock/tall_plant
+Places a block with a lower and upper half.
+## Arguments
+argument `block`\
+Specifies the plant type.
+## Examples
+`/function jmcc:command/setblock/tall_plant {block:"minecraft:lilac"}`\
+Places lower an upper half of a `minecraft:lilac`.
+
+`/function jmcc:command/setblock/tall_plant {block:"minecraft:large_fern"}`\
+Places lower an upper half of a `minecraft:large_fern`.
 ## Command explosion
 Summons an explosion at the current location.
 ### Arguments
