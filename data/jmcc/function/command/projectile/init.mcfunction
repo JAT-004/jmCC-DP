@@ -1,6 +1,9 @@
-say init
+
 # remove tag
 tag @s remove jmcc.init
+
+# schedule death if duration > 0
+$execute unless score static.0 jmcc.value matches $(death).. run function jmcc:command/projectile/kill
 
 # get position
 execute store result score pos.x jmcc.value run data get entity @s Pos[0] 100000.0

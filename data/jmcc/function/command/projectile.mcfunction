@@ -13,4 +13,4 @@ kill 00000000-0000-0000-0000-000000000000
 # summon projectile
 $summon $(type) ^ ^ ^ {NoGravity:$(hover),Tags:["jmcc.shot","jmcc.init"],data:{jmcc:{owner:"$(uuid)"}}}
 # initialize projectile
-$execute as @e[type=$(type),tag=jmcc.shot,tag=jmcc.init] at @s run function jmcc:command/projectile/init
+$execute as @e[type=$(type),tag=jmcc.shot,tag=jmcc.init] at @s run function jmcc:command/projectile/init {death:$(death)}

@@ -48,6 +48,9 @@ The projectile speed.
 
 argument `hover`: Boolean\
 Sets the NoGravity parameter.
+
+argument `death`: Int\
+Duration until the projectile is killed. Use 0 for infinite duration.
 ### Scoreboards
 scoreboard `anchor.x`\
 scoreboard `anchor.y`\
@@ -61,6 +64,17 @@ Projectile start position for motion calculation.
 ### Examples
 `/execute anchored eyes run function jmcc:command/projectile with storage jmcc:data argument`\
 Creates a projectile with the parameters specfied within the storage `jmcc:data argument`.
+## Command death
+Schedule the death for an entity.
+### Arguments
+argument `uuid`: String\
+The uuid of the target entity.
+
+argument `death`: Int\
+Time in ticks when the kill command will be triggered.
+### Examples
+`/function jmcc:command/death {uuid:"00000000-0000-0000-0000-000000000000",tick:200}`\
+Kills the entity with the specified uuid after 200 ticks (10 seconds).
 ## Command setblock/door
 Places a door.
 ### Arguments
