@@ -2,9 +2,6 @@
 # remove tag
 tag @s remove jmcc.init
 
-# schedule death if duration > 0
-$execute unless score static.0 jmcc.value matches $(death).. run function jmcc:command/projectile/kill
-
 # get position
 execute store result score pos.x jmcc.value run data get entity @s Pos[0] 100000.0
 execute store result score pos.y jmcc.value run data get entity @s Pos[1] 100000.0
@@ -22,3 +19,9 @@ execute store result entity @s Motion[2] double -0.00001 run scoreboard players 
 
 # copy motion
 data modify entity @s data.jmcc.motion set from entity @s Motion
+
+# get uuid
+function jmcc:argument/uuid
+
+# schedule death if duration > 0
+$execute unless score static.0 jmcc.value matches $(death).. run function jmcc:command/death with storage jmcc:data argument
