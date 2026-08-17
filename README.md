@@ -135,3 +135,16 @@ Executes the command `/say Hello`.
 
 `/function jmcc:command/run {command:"function jmcc:command/run {command:'say Hello'}"}`\
 Executes a function with arguments.
+## Entity interaction
+### Tags
+tag `jmcc`\
+Marks the interaction as relevant for this datapack.
+### Data
+data `data.jmcc.action.command`\
+A command that will execute upon interaction.
+
+data `data.jmcc.attack.command`\
+A command that will execute upon attack.
+### Examples
+`/summon interaction ~ ~ ~ {Tags:["jmcc"],data:{jmcc:{action:{command:"say Interaction"},attack:{command:"say Attack"}}}}`\
+Spawns an interaction which will output a message in chat when interacted or attacked.
