@@ -23,17 +23,23 @@ Used to calculate the time when adding a command to the queue.
 
 scoreboard `queue.open jmcc.count`\
 Counts how many different timestamps are open in the queue. Used to reset the scoreboard `queue.tick jmcc.count`.
-### Storage
-storage `jmcc:data argument.tick`\
-storage `jmcc:data argument.next`\
-storage `jmcc:data argument.command`\
-The functions include these storage paths for macro usage.
 ### Examples
 `/function jmcc:command/queue {tick:200,command:"say Hello"}`\
 Queue the command `/say Hello` for 200 ticks (10 seconds).
 
 `/function jmcc:command/queue {tick:100,command:"function jmcc:command/queue {tick:100,command:'say Hi'}"}`\
 Add another queue command to the queue. The command `/say Hi` will run in 100 + 100 = 200 ticks (10 seconds).
+## Command hint
+Displays a message in the actionbar.
+### Arguments
+argument `type`: "info", "warn" or "error"\
+Sets the type of the message, that is used to get the color.
+
+argument `translate`: String\
+The translate sring.
+### Examples
+`/function jmcc:command/hint {type:"info",translate:"jmcc.door.is_locked"}`\
+Shows the door is locked message as info within the actionbar.
 ## Command projectile
 Spawns and initializes a projectile.
 ### Arguments
@@ -140,10 +146,10 @@ Executes a function with arguments.
 tag `jmcc`\
 Marks the interaction as relevant for this datapack.
 ### Data
-data `data.jmcc.action.command`\
+data `data.jmcc.action.command`: String\
 A command that will execute upon interaction.
 
-data `data.jmcc.attack.command`\
+data `data.jmcc.attack.command`: String\
 A command that will execute upon attack.
 ### Examples
 `/summon interaction ~ ~ ~ {Tags:["jmcc"],data:{jmcc:{action:{command:"say Interaction"},attack:{command:"say Attack"}}}}`\
