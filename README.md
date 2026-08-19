@@ -141,6 +141,20 @@ Executes the command `/say Hello`.
 
 `/function jmcc:command/run {command:"function jmcc:command/run {command:'say Hello'}"}`\
 Executes a function with arguments.
+## Command as
+Executes a command as and at a target.
+### Arguments
+argument `command`: String\
+The command that will be executed.
+
+argument `target`: String\
+The target entity.
+### Examples
+`/function jmcc:command/as {target:"@e[tag=jmcc]",command:"say Hello"}`\
+Executes the command `/say Hello` as and at @e[tag=jmcc].
+
+`/function jmcc:command/as {target:"00000000-0000-0000-0000-000000000000",command:"setblock ~ ~ ~ minecraft:stone replace"}`\
+Executes the command `/setblock ~ ~ ~ minecraft:stone replace` as and at the entity with the specified uuid.
 ## Entity interaction
 ### Tags
 tag `jmcc`\
