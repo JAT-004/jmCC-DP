@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "jmcc.slot_change": {
+          "max": -5
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "jmcc.slot_change": {
+          "min": 1,
+          "max": 4
+        }
+      }
+    }
+  ]
+}

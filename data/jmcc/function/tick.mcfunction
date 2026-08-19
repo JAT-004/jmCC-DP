@@ -1,4 +1,7 @@
 
+# player save selected slot
+execute as @a run function jmcc:player/get/_selected_slot
+
 # incearse queue tick
 scoreboard players add queue.tick jmcc.count 1
 

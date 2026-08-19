@@ -6,11 +6,16 @@ scoreboard objectives add jmcc.count dummy
 scoreboard objectives add jmcc.value dummy
 scoreboard objectives add jmcc.death dummy
 
+scoreboard objectives add jmcc.slot_previous dummy
+scoreboard objectives add jmcc.slot_current dummy
+scoreboard objectives add jmcc.slot_change dummy
+
 # set static numbers
 # old, prepare to remove
 scoreboard players set static.256 jmcc.number 256
 # new
 scoreboard players set static.0 jmcc.value 0
+scoreboard players set static.9 jmcc.value 0
 scoreboard players set static.256 jmcc.value 256
 
 # set all hex values
