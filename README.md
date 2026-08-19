@@ -155,6 +155,22 @@ Executes the command `/say Hello` as and at @e[tag=jmcc].
 
 `/function jmcc:command/as {target:"00000000-0000-0000-0000-000000000000",command:"setblock ~ ~ ~ minecraft:stone replace"}`\
 Executes the command `/setblock ~ ~ ~ minecraft:stone replace` as and at the entity with the specified uuid.
+## Command at
+Executes a command at a position.
+### Arguments
+argument `command`: String\
+The command that will be executed.
+
+argument `x`: Double\
+argument `y`: Double\
+argument `z`: Double\
+The position.
+### Examples
+`/function jmcc:command/at {x:20,y:-60,z:10,command:"setblock ~ ~ ~ minecraft:dirt replace"}`\
+Places a `minecraft:dirt` at 20 -60 10.
+
+`/function jmcc:command/at {x:"~",y:"~",z:"~",command:"setblock ~ ~ ~ minecraft:dirt replace"}`\
+Places a `minecraft:dirt` at the current position of the executor.
 ## Entity interaction
 ### Tags
 tag `jmcc`\
