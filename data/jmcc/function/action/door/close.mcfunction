@@ -7,6 +7,3 @@ execute positioned ~ ~1 ~ run function jmcc:command/setblock/door with entity @s
 
 # lock door
 tag @s[tag=jmcc.autolock] add jmcc.locked
-
-# sound
-#xxx

@@ -3,7 +3,7 @@
 tag @s remove jmcc.init
 
 # save uuid
-function projectiles:uuid
+function jmcc:argument/uuid
 data modify entity @s data.jmcc.uuid set from storage jmcc:data argument.uuid
 
 # get material

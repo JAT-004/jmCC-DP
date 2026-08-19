@@ -1,12 +1,15 @@
 
+# copy relevant door uuid array
+data modify storage jmcc:data argument.array set from entity @s data.jmcc.connect
+
 # close door
-execute if block ~ ~1 ~ #minecraft:doors[open=true,powered=false] run return run function jmcc:action/door/close with entity @s data.jmcc
+execute if block ~ ~1 ~ #minecraft:doors[open=true,powered=false] run return run function jmcc:array/target {path:"storage jmcc:data argument.array",command:"function jmcc:action/door/close"}
 
 # message if door is opened by redstone signal
 execute if block ~ ~1 ~ #minecraft:doors[open=true,powered=true] on target run return run function jmcc:command/hint {type:"info",translate:"jmcc.door.electrically_operated"}
 
 # open door
-execute as @s[tag=!jmcc.locked] run return run function jmcc:action/door/open with entity @s data.jmcc
+execute as @s[tag=!jmcc.locked] run return run function jmcc:array/target {path:"storage jmcc:data argument.array",command:"function jmcc:action/door/open"}
 
 # message if door is locked
 execute on target run function jmcc:command/hint {type:"info",translate:"jmcc.door.is_locked"}
