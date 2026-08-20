@@ -12,3 +12,5 @@ execute if score @s jmcc.slot_previous = @s jmcc.slot_current run return 1
 scoreboard players operation @s jmcc.slot_change = @s jmcc.slot_previous
 # calculate change
 scoreboard players operation @s jmcc.slot_change -= @s jmcc.slot_current
+# return success
+return 1
